@@ -1,0 +1,44 @@
+.about{
+    font-family: "Noto Sans", sans-serif;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: clamp(280px, 90%, 800px);
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    font-size: clamp(14px, 1.8vw, 16px);
+    font-weight: 100;
+    font-style: normal;
+    color: transparent;
+    overflow-wrap: break-word;
+    font-variation-settings: 
+        "wdth" 300;
+    background-color: transparent;
+    padding-left: clamp(10px, 2vw, 20px);
+
+    border-left-color: transparent;
+    border-left-style: solid;
+    border-left-width: 1px;
+    
+    opacity: 0; 
+    transform: translateY(20px);
+    transition: opacity 1s ease; 
+}
+.about.visible {
+    animation: fadeInAbout 0.5s ease-out forwards;
+}
+
+@keyframes fadeInAbout {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        color: transparent;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        color: #FFFFFF;
+        border-left-color: #900090;
+    }
+}
