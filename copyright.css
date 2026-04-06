@@ -1,0 +1,37 @@
+.copyright{
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    margin-top: clamp(40px, 10vh, 100px);
+    width: 100%;
+    text-align: center;
+    font-size: clamp(12px, 1.2vw, 16px);
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: transparent ;
+    padding-top: 10px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: transparent;
+    opacity: 0;
+    transform: translateY(100%); 
+    z-index: 999;
+}
+
+.copyright.visible {
+    animation: fadeInCopyright 1s ease-out forwards;
+}
+
+@keyframes fadeInCopyright {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+        color: transparent;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        color: gray;
+        border-top-color: #00FFFF;
+    }    
+}
