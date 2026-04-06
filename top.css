@@ -1,0 +1,43 @@
+.top{
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    display: flex;
+    gap: 0px;
+    justify-content: center;
+    margin-top: clamp(100px, 50vh, 350px);
+    margin-bottom: clamp(12px, 2vh, 24px);
+    font-size: clamp(24px, 8vw, 55px); 
+    font-weight: bold;
+    width: 100%;
+    overflow-wrap: normal;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, #ff60ff, #00FFFF, #ff60ff);
+    background-size: 500% 500%;
+    text-shadow: 3px -3px 10px rgba(255, 255, 255, 0.2);
+
+    animation: 
+        gradient 18s linear infinite,
+        fadeIn 1.2s ease-out forwards;
+}
+
+.no-break {
+    white-space: nowrap;
+}
+
+.toptext{
+    margin-top: 0px;
+    margin-bottom: -10px;
+}
+
+@keyframes gradient {
+    from {background-position: 0% 0%}
+    to {background-position: 500% 500%}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;
+    transform: translateY(20px);}
+    to {opacity: 1;
+    transform: translateY(0);}    
+}
