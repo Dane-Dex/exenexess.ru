@@ -1,0 +1,88 @@
+.menu {
+    display: none; 
+}
+
+.menu-button {
+    position: fixed;
+    top: clamp(20px, 8vh, 60px);
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    width: 28px;
+    height: 28px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #0a0a0a;
+    transition: 0.1s;
+    margin-bottom: 5px;
+}
+
+.sidebar {
+    font-family: "Roboto mono", monospace;
+    position: fixed;
+    top: 55px;
+    width: clamp(180px, 60vw, 210px);
+    height: 100%;
+    z-index: 997;  
+    left: clamp(-220px, -65vw, -210px); 
+    background-color: #000000;
+    transition: 0.3s;
+    padding-left: 10px;
+    color: #ffffff;
+    font-size: clamp(16px, 2.5vw, 20px);
+    font-weight: 300;
+    overflow-wrap: break-word;
+    border-right: 1px solid #900090;
+}
+
+.sidebar-protector {
+    position: fixed;
+    top: 55px;
+    width: 13px;
+    left: 0px;
+    height: 100%;
+    z-index: 998;  
+    background-color: #000000;
+}
+
+.sidebar-text {
+    text-align: left;
+    margin-left: 60px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.menu-button:hover {
+    background-color: #0f0f0f;
+}
+
+.menu-button span {
+    position: absolute;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu-button .close-icon {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.menu-button .open-icon {
+    opacity: 1;
+}
+
+.menu:checked ~ .menu-button .open-icon {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.menu:checked ~ .menu-button .close-icon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.menu:checked ~ .sidebar {
+    left: 0;
+}
