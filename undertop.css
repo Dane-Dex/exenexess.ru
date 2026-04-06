@@ -1,0 +1,22 @@
+.undertop{
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    margin-top: 0px;
+    font-size: clamp(18px, 4vw, 30px); 
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings: 
+        "wdth" 300;
+    color: #32424200 ;
+    animation: 
+        fadeInUnder 1s ease-out 0.5s forwards;
+}
+
+@keyframes fadeInUnder {
+    from {opacity: 0;
+    transform: translateY(20px);
+    color: transparent}
+    to {opacity: 1;
+    transform: translateY(0);
+    color: gray}    
+}
