@@ -1,0 +1,21 @@
+.topcontacts{
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    margin-top: clamp(100px, 50vh, 400px);
+    margin-bottom: 20px;
+    font-size: clamp(24px, 8vw, 55px); 
+    font-weight: bold;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, #ff60ff, #00FFFF, #ff60ff);
+    background-size: 500% 500%;
+    opacity: 0;
+    animation: 
+        gradient 18s linear infinite;
+}
+
+.topcontacts.visible {
+    animation: 
+        gradient 18s linear infinite,
+        fadeIn 0.7s ease-out forwards;
+}
