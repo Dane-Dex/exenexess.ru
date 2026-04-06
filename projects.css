@@ -1,0 +1,135 @@
+.projects {
+    display: flex; /* Делает кнопки в ряд */
+    flex-wrap: wrap;
+    gap: 10px; /* Расстояние между кнопками */
+    justify-content: center; /* Центрирует группу кнопок */
+    margin: 0 auto;
+    width: clamp(280px, 90%, 800px);
+}
+
+.project-button {
+    padding: 10px 20px; /* Размер кнопки */
+    border-radius: 10px; /* Делает кнопку овальной */
+    width: clamp(210px, 100%, 20%); 
+    flex-grow: 1;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    background-color: transparent;
+    color: transparent;
+    opacity: 0;
+}
+
+.project-name{
+    font-family: "Roboto mono", monospace;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: 
+        "wdth" 100;
+    font-size: clamp(14px, 1.8vw, 16px);
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10;
+    opacity: 0;
+    font-variation-settings: 
+        "wdth" 300;
+}
+
+.project-about{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: 
+        "wdth" 300;
+    margin-top: 10px;
+    overflow-wrap: break-word;
+    font-size: clamp(12px, 1.5vw, 14px);
+    font-weight: bold;
+    opacity: 0;
+}
+
+.project-language-button {
+    display: inline-flex; /* Делает кнопки в ряд */
+    align-self: flex-start;
+    gap: 10px; /* Расстояние между кнопками */
+    display: inline-block;
+    padding: 10px auto; /* Размер кнопки */
+    border-radius: 50px; /* Делает кнопку овальной */
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    background-color: transparent;
+    color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+.project-language {
+    font-family: "Roboto mono", monospace;
+    text-align: center;
+    width: auto;
+    color: transparent;
+    font-size: 12px;
+    margin: 2px 7px;
+    opacity: 0;
+}
+
+.project-button.visible {
+    animation: fadeInProjectButton 1s ease-in-out forwards;
+}
+
+.project-name.visible {
+    animation: fadeInProjectName 1s ease-in-out forwards;
+}
+
+.project-about.visible {
+    animation: fadeInProjectAbout 1s ease-in-out forwards;
+}
+
+.project-language-button.visible {
+    animation: fadeInProjectLanguageButton 1s ease-in-out forwards;
+}
+
+.project-language.visible {
+    animation: fadeInProjectLanguage 1s ease-in-out forwards;
+}
+
+@keyframes fadeInProjectName {
+    from {opacity: 0;
+    background-color: transparent;
+}
+    to {opacity: 1;
+    color: #00FFFF;}    
+}
+
+@keyframes fadeInProjectAbout {
+    from {opacity: 0;
+    background-color: transparent;
+}
+    to {opacity: 1;
+    color: gray;}    
+}
+
+@keyframes fadeInProjectButton {
+    from {opacity: 0;
+    background-color: transparent;
+    transform: translateY(20px);}
+    to {opacity: 1;
+    background-color: #200020;
+    transform: translateY(0px);
+    border-color: #900090;}    
+}
+
+@keyframes fadeInProjectLanguageButton {
+    from {opacity: 0;
+    background-color: transparent;}
+    to {opacity: 1;
+    background-color: #002222;
+    border-color: #00FFFF;}    
+}
+@keyframes fadeInProjectLanguage {
+    from {opacity: 0;}
+    to {opacity: 1;
+    color: #00FFFF;}    
+}
