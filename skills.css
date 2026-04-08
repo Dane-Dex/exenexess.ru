@@ -44,7 +44,7 @@
 }
 
 .skill-bar.visible .skill-fill {
-    animation: filling 1s ease-out 0.5s forwards;
+    animation: filling 0.7s ease-out 0.5s forwards;
 }
 
 .skill-bar.visible {
