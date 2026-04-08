@@ -1,7 +1,6 @@
 .topskills{
     font-family: "Roboto Mono", monospace;
     text-align: center;
-    margin-top: clamp(100px, 50vh, 400px);
     font-size: clamp(24px, 8vw, 55px); 
     font-weight: bold;
     background-clip: text;
