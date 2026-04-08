@@ -56,12 +56,12 @@
     width: 100%;
     z-index: 995;              /* Чтобы был под header */
 
-    height: 55px;
+    height: 56px;
 
     font-weight: 100;
-    font-style: normal;
+    font-style: bold;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 100;
     font-variation-settings: 
         "wdth" 300;
 
