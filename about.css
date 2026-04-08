@@ -7,19 +7,22 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
-    font-size: clamp(14px, 1.8vw, 16px);
-    font-weight: 100;
+    margin-bottom: 10px;
+    font-size: clamp(14px, 1.8vw, 20px);
+    font-weight: bold;
     font-style: normal;
     color: transparent;
     overflow-wrap: break-word;
-    font-variation-settings: 
-        "wdth" 300;
+    font-variation-settings: "wdth" 300;
     background-color: transparent;
     padding-left: clamp(10px, 2vw, 20px);
 
     border-left-color: transparent;
     border-left-style: solid;
     border-left-width: 1px;
+    
+    
+    text-decoration: none;
     
     opacity: 0; 
     transform: translateY(20px);
@@ -41,4 +44,8 @@
         color: #FFFFFF;
         border-left-color: #900090;
     }
+}
+
+a {
+    color: #ff60ff;
 }
