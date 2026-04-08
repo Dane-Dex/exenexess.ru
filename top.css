@@ -4,7 +4,6 @@
     display: flex;
     gap: 0px;
     justify-content: center;
-    margin-top: clamp(100px, 50vh, 350px);
     margin-bottom: clamp(12px, 2vh, 24px);
     font-size: clamp(24px, 8vw, 55px); 
     font-weight: bold;
