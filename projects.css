@@ -4,11 +4,11 @@
     gap: 10px; /* Расстояние между кнопками */
     justify-content: center; /* Центрирует группу кнопок */
     margin: 0 auto;
-    width: clamp(280px, 90%, 800px);
+    width: clamp(280px, 90%, 820px);
 }
 
 .project-button {
-    padding: 10px 20px; /* Размер кнопки */
+    padding: 10px 15px; /* Размер кнопки */
     border-radius: 10px; /* Делает кнопку овальной */
     width: clamp(210px, 100%, 20%); 
     flex-grow: 1;
