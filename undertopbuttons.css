@@ -29,7 +29,7 @@
 }
 
 .button:hover {
-    transform: scale(1.1) !important; 
+    transform: scale(1.03) !important; 
 }
 
 .button:active {
