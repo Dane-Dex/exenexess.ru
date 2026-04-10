@@ -1,12 +1,22 @@
-.menu {
-    display: none; 
-}
-
-.menu-button {
+.nav-container {
     position: fixed;
     top: clamp(20px, 8vh, 60px);
     left: 10px;
+    z-index: 999;
     display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.menu {
+    display: none;
+}
+
+.menu-button, .extra-button {
+    position: fixed;
+    top: 60px;
+    left: 5px;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -17,16 +27,16 @@
     padding: 10px;
     background-color: #0a0a0a;
     transition: 0.1s;
-    margin-bottom: 5px;
+    gap: 15px;
 }
 
 .sidebar {
     font-family: "Roboto mono", monospace;
     position: fixed;
-    top: 55px;
-    width: clamp(180px, 60vw, 210px);
+    top: 56px;
+    width: clamp(180px, 60vw, 200px);
     height: 100%;
-    z-index: 997;  
+    z-index: 995;  
     left: clamp(-220px, -65vw, -210px); 
     background-color: #000000;
     transition: 0.3s;
@@ -36,12 +46,13 @@
     font-weight: 300;
     overflow-wrap: break-word;
     border-right: 1px solid #900090;
+    border-radius: 10px;
 }
 
 .sidebar-protector {
     position: fixed;
     top: 55px;
-    width: 13px;
+    width: 5px;
     left: 0px;
     height: 100%;
     z-index: 998;  
