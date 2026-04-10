@@ -74,6 +74,10 @@
     opacity: 0;
 }
 
+.project-button:active {
+    transform: scale(0.98) !important;
+}
+
 .project-button.visible {
     animation: fadeInProjectButton 1s ease-in-out forwards;
 }
@@ -107,7 +111,7 @@
     background-color: transparent;
 }
     to {opacity: 1;
-    color: gray;}    
+    color: #dadada;}    
 }
 
 @keyframes fadeInProjectButton {
