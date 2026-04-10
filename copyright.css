@@ -7,10 +7,15 @@
     font-style: normal;
     font-variation-settings: "wdth" 100;
     color: transparent ;
-    padding-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-top-style: solid;
     border-top-width: 1px;
     border-top-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: transparent;
+    border-radius: 10px;
     opacity: 0;
     transform: translateY(100%); 
     z-index: 999;
@@ -29,7 +34,8 @@
     to {
         opacity: 1;
         transform: translateY(0);
-        color: gray;
-        border-top-color: #00FFFF;
+        color: #dadada;
+        border-top-color: #900090;
+        border-bottom-color: #00FFFF;
     }    
 }
