@@ -1,3 +1,5 @@
 .between{
-    margin-top: clamp(100px, 50vh, 400px);
+    height: clamp(100px, 50vh, 400px);
+    width: 100%;
+    background-color:  transparent;
 }
