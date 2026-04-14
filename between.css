@@ -1,5 +1,43 @@
-.between{
+.between0{
     height: clamp(100px, 50vh, 400px);
     width: 100%;
     background-color:  transparent;
+    position: relative;
+    overflow: hidden;
+}
+.between1{
+    height: clamp(100px, 50vh, 400px);
+    width: 100%;
+    background-color:  transparent;
+    position: relative;
+    overflow: hidden;
+}
+.between2{
+    height: clamp(100px, 50vh, 400px);
+    width: 100%;
+    background-color:  transparent;
+    position: relative;
+    overflow: hidden;
+}
+.between3{
+    height: clamp(100px, 50vh, 400px);
+    width: 100%;
+    background-color:  transparent;
+    position: relative;
+    overflow: hidden;
+}
+.between4{
+    height: clamp(100px, 50vh, 400px);
+    width: 100%;
+    background-color:  transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.betweencopyright{
+    margin-top: clamp(40px, 50vh, 100px);
+    width: 100%;
+    background-color:  transparent;
+    position: relative;
+    overflow: hidden;
 }

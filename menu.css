@@ -45,7 +45,7 @@
     font-size: clamp(16px, 2.5vw, 20px);
     font-weight: 300;
     overflow-wrap: break-word;
-    border-right: 1px solid #900090;
+    border-right: 1px solid #00FFFF;
     border-radius: 10px;
 }
 
